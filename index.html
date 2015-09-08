@@ -21,6 +21,7 @@
                 max-width: 300px;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 40px;
             }
 
             label {
@@ -66,6 +67,10 @@
         <form method="get" action="http://google.co.uk">
             <div class="field">
                 <label for="dob">Date of birth (dd/mm/yyyy)</label>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="field">
+                <label for="dob">Date of birth (EDIT)</label>
                 <input type="date" name="dob" id="dob" value="1983-09-19" required>
             </div>
         </form>
