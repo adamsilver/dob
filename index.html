@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validator Demo</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta name="Author" content="Adam Silver">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <style>
+
+            body {
+                background-color: #F2F0ED;
+                color: #9D9B96;
+                font-family: "Apercu Light", Calibri, sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            .field {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            label {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                display: block;
+                letter-spacing: 0.03em;
+            }
+
+            input {
+                -webkit-appearance: none;
+                border-radius: 4px;
+                border: 1px solid #DDD;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                font-size: 16px;
+                color: #555569;
+                width: 100%;
+                border-radius: 4px;
+                padding: 12px 10px;
+                letter-spacing: 0.05em;
+                text-indent: 0.05em;
+                height: 50px;
+                letter-spacing: 0.03em;
+            }
+
+            input[type=date]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                display: none;
+            }
+
+            input[type=date]::-webkit-calendar-picker-indicator {
+                -webkit-appearance: none;
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Date of birth field</h1>
+        <form method="get" action="http://google.co.uk">
+            <div class="field">
+                <label for="dob">Date of birth (dd/mm/yyyy)</label>
+                <input type="date" name="dob" id="dob" value="1983-09-19" required>
+            </div>
+        </form>
+    </body>
+</html>
